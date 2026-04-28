@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_BASE = "http://localhost:5000/api/fuel";
+const API_BASE = "https://fuelindia-6qms.onrender.com";
 
 export default function App() {
   const [data, setData] = useState([]);

@@ -19,6 +19,8 @@ app.get("/api/fuel", async (req, res) => {
     const response = await axios.get(API_URL, {
       headers: {
         "x-api-key": process.env.API_KEY,
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "application/json"
       },
     });
 
@@ -44,5 +46,5 @@ app.get("/api/fuel", async (req, res) => {
 
 // start server
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running`);
 });
